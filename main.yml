@@ -1,4 +1,19 @@
-# .github/workflows/main.yml
+name: Taski main workflow
+
+on:
+  push:
+    branches:
+      - main
+    ...
+
+jobs:
+    # Запустить тестирование приложения
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - ...
+  # Собрать и отправить образ приложения на Docker Hub
+  # .github/workflows/main.yml
 
 # Тут задачи тестирования и сборки образа
 # ...
